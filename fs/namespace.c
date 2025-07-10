@@ -1274,7 +1274,7 @@ static struct mount *clone_mnt(struct mount *old, struct dentry *root,
 bypass_orig_flow:
 #else
 	mnt = alloc_vfsmnt(old->mnt_devname);
-+#endif
+#endif
 	if (!mnt)
 		return ERR_PTR(-ENOMEM);
 
